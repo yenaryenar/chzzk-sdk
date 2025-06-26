@@ -1,0 +1,10 @@
+services:
+  cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cli
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    command: sh -c "php -a && tail -f /dev/null"
