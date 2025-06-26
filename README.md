@@ -1,5 +1,5 @@
 # chzzk-sdk
-[치지직(Chzzk) Open API]((https://chzzk.gitbook.io/chzzk)) 비공식 PHP SDK
+[치지직(Chzzk) Open API](https://chzzk.gitbook.io/chzzk) 비공식 PHP SDK
 
 Powered by Claude Code and JetBrains AI
 
