@@ -23,7 +23,7 @@ $sdk = new ChzzkSdk($client);
 try {
     // 액세스 토큰 획득
     $accessToken = $sdk->getApiClient()->getOrCreateAccessToken();
-    
+
     echo "액세스 토큰 획득 성공!\n";
     echo "토큰 타입: " . $accessToken->getTokenType() . "\n";
     echo "만료 시간: " . $accessToken->getExpiresIn() . "초\n\n";

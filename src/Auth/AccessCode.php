@@ -7,7 +7,8 @@ readonly class AccessCode
     public function __construct(
         private string $code,
         private string $state
-    ) {}
+    ) {
+    }
 
     public function getCode(): string
     {

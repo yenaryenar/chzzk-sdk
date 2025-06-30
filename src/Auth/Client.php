@@ -26,6 +26,7 @@ readonly class Client
     {
         return $this->redirectUri;
     }
+
     public function getAccessCode(): AccessCode
     {
         return $this->accessCode;

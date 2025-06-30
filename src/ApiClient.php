@@ -23,12 +23,12 @@ class ApiClient
      */
     private function getAccessToken(): AccessToken
     {
-        $response = $this->httpClient->post(self::BASE_URL."/auth/v1/token", [
+        $response = $this->httpClient->post(self::BASE_URL . "/auth/v1/token", [
             "headers" => [
                 "Content-Type" => "application/json"
             ],
             "json" => [
-                "grantType" => "authorization_code ",
+                "grantType" => "authorization_code",
                 "clientId" => $this->client->getClientId(),
                 "clientSecret" => $this->client->getClientSecret(),
                 "code" => $this->client->getAccessCode()->getCode(),
@@ -51,7 +51,7 @@ class ApiClient
      */
     public function refreshAccessToken(AccessToken $accessToken): AccessToken
     {
-        $response = $this->httpClient->post(self::BASE_URL."/auth/v1/token", [
+        $response = $this->httpClient->post(self::BASE_URL . "/auth/v1/token", [
             "headers" => [
                 "Content-Type" => "application/json"
             ],
@@ -80,7 +80,7 @@ class ApiClient
         AccessToken $accessToken,
         TokenTypeHint $tokenTypeHint = TokenTypeHint::Access
     ): void {
-        $this->httpClient->post(self::BASE_URL."/auth/v1/token/revoke", [
+        $this->httpClient->post(self::BASE_URL . "/auth/v1/token/revoke", [
             "headers" => [
                 "Content-Type" => "application/json"
             ],
