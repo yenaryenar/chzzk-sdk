@@ -1,6 +1,6 @@
 {
     "name": "cherryred5959/chzzk-sdk",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "require": {
         "php": "^8.3",
         "guzzlehttp/guzzle": "^7.0"
